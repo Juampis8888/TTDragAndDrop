@@ -133,7 +133,8 @@ public class StudentManager : MonoBehaviour
     {
         int countChild = Content.childCount;
         for(int i = 0; i < countChild; i++)
-        {
+        {   
+            StudentsAdapter.RemoveAt(0);
             DestroyImmediate(Content.GetChild(0).gameObject);
         }
     }
